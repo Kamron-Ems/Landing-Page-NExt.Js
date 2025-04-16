@@ -8,6 +8,9 @@
  .btn {
     @apply bg-primary rounded px-5 py-2 text-white;
  }
+ .btn2 {
+    @apply flex gap-2 items-center font-semibold text-lg text-primary
+ }
  .h1 {
    @apply font-semibold text-text_title text-3xl;
  }

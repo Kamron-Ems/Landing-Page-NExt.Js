@@ -41,7 +41,8 @@ const DataIcons =[
 
 function SecondBanner() {
   return (
-    <div className=' container px-10 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-0 justify-between'>
+    <div>
+      <div className=' container px-10 mx-auto bg-background flex flex-col md:flex-row items-center gap-10 md:gap-0 justify-between'>
       {/* Left Section */}
       <div className=' h-96 max-w-[500px] '>
         <Image 
@@ -79,6 +80,7 @@ function SecondBanner() {
             }
             <button className='flex gap-2 items-center font-semibold text-lg text-primary' >Meet all customers <BsArrowRight/></button>
           </div>
+      </div>
       </div>
     </div>
   )

@@ -8,6 +8,9 @@ import Community from "./components/Community"
 import Informations from "./components/Informations"
 import Banner from "./components/Banner"
 import SecondBanner from "./components/SecondBanner"
+import CaringSection from "./components/CaringSection"
+import ActionButton from "./components/ActionButton"
+import Footer from "./components/Footer"
 // Files
 import info1 from "@/public/Informations/info1.png"
 import info2 from "@/public/Informations/info2.png"
@@ -25,15 +28,22 @@ const DataInf2 = {
 
 export default function Root() {
   return (
-    <div className="mb-96">
+    <div className="">
       <NavBar/>
       <Hero/>
       <OfferSection/>
       <Community/>
-      <Informations title={DataInf1.title} img={DataInf1.img} description={DataInf1.description} />
-      <Banner/>
-      <Informations title={DataInf2.title} img={DataInf2.img} description={DataInf2.description} />
-      <SecondBanner/>
+      <div className="space-y-9 ">
+        <Informations title={DataInf1.title} img={DataInf1.img} description={DataInf1.description} />
+        <Banner/>
+        <Informations title={DataInf2.title} img={DataInf2.img} description={DataInf2.description} />
+        <SecondBanner/>
+        <CaringSection/>
+      </div>
+      <footer className="mt-56">
+      <ActionButton/> 
+      <Footer/>
+      </footer>
     </div>
   );
 }

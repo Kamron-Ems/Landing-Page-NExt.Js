@@ -13,7 +13,8 @@ const config: Config = {
         primary:"#4CAF4F",
         secondary:"#ed8900",
         text_title: "#4D4D4D",
-        text_lambda: "#717171"
+        text_lambda: "#717171",
+        background: "#F5F7FA",
       },
       // container:{
       //   center: true,
