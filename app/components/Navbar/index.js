@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logo from '@/public/Logo/Logo1.png'
 import React, { useState } from 'react'
 // import { Menu } from 'lucide-react';
-import { BiCloset, BiMenu } from 'react-icons/bi'
+import { BiMenu } from 'react-icons/bi'
 import { BsArrowRight, BsMenuButtonFill } from 'react-icons/bs'
 import { GrClose } from 'react-icons/gr'
 

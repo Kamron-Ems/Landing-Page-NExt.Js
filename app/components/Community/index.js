@@ -29,7 +29,7 @@ const DataIcon = [
 
 function Community() {
   return (
-    <div className=' space-y-5 container mx-auto my-7' >
+    <div className=' space-y-8 container mx-auto my-7' >
       {/* Title and Description Section */}
       <div className='max-w-[430px] mx-auto space-y-3'>
         {/* title */}

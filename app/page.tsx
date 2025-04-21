@@ -11,6 +11,7 @@ import SecondBanner from "./components/SecondBanner"
 import CaringSection from "./components/CaringSection"
 import ActionButton from "./components/ActionButton"
 import Footer from "./components/Footer"
+import NavBars from "./components/Navbars"
 // Files
 import info1 from "@/public/Informations/info1.png"
 import info2 from "@/public/Informations/info2.png"
@@ -30,7 +31,8 @@ export default function Root() {
   return (
     <div className="">
       <NavBar/>
-      {/* <Hero/>
+      <NavBars/>
+      <Hero/>
       <OfferSection/>
       <Community/>
       <div className="space-y-9 ">
@@ -43,7 +45,7 @@ export default function Root() {
       <footer className="mt-56">
       <ActionButton/> 
       <Footer/>
-      </footer> */}
+      </footer>
     </div>
   );
 }
