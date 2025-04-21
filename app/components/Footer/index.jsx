@@ -33,16 +33,16 @@ function Footer() {
             </div>
             {/* Icon */}
             <div className='flex  gap-4 text-white '>
-              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center ' >
+              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center animate_btn ' >
                 <BsInstagram className=" w-5 h-5 " />
               </div>
-              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center ' >
+              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center animate_btn ' >
                 <BsFacebook className=" w-5 h-5 " />
               </div>
-              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center '>
+              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center animate_btn '>
                 <BsTwitter className=" w-5 h-5 "/>
               </div>
-              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center '>
+              <div className='bg-zinc-600 w-10 h-10 rounded-full flex justify-center items-center animate_btn '>
                 <BsYoutube className=" w-5 h-5 "/>
               </div>
             </div>

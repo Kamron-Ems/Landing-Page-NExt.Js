@@ -49,7 +49,7 @@ function CaringSection() {
                     {/* Description Card */}
                     <div id="box" className='absolute top-[80%] left-1/2 transform -translate-x-1/2 z-50 p-4  shadow-lg text-center bg-background flex flex-col items-center w-64  gap-3 rounded-lg '>
                         <p className='text-text_lambda font-semibold text-lg '>{item.description}</p>
-                        <button className='flex gap-2 items-center font-semibold text-lg text-primary' >Readmore <BsArrowRight/></button> 
+                        <button className='flex gap-2 items-center font-semibold text-lg text-primary animate_btn' >Readmore <BsArrowRight/></button> 
                     </div>
                     
                 </div>

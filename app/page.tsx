@@ -30,7 +30,7 @@ const DataInf2 = {
 export default function Root() {
   return (
     <div className="">
-      <NavBar/>
+      {/* <NavBar/> */}
       <NavBars/>
       <Hero/>
       <OfferSection/>

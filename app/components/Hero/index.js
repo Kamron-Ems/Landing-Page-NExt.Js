@@ -72,7 +72,7 @@ function Hero() {
                 <p className='text-xs lg:text-base text-text_title/90 ' >{item.description}</p>
               </div>
                 {/* button Action */}
-                <button className='btn' >Register</button>
+                <button className='btn animate_btn' >Register</button>
             </div>
             {/* Left Image section */}
             <div 

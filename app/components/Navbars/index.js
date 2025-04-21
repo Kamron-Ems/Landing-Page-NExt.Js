@@ -16,8 +16,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" ">
-      <nav className="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div className=" shadow ">
+    <nav className="py-3 px-2 bg-white container mx-auto   md:flex md:items-center md:justify-between">
         <div className="flex justify-between items-center">
         <div className='relative w-[140px] h-[50px]'> 
         <Image 
@@ -48,6 +48,8 @@ const Navbar = () => {
                 : "top-[-400px] opacity-0 z-[-1]"
             } md:top-auto md:opacity-100 md:z-auto`}
         >
+          {/* <div className="flex items-center gap-0" > */}
+
           {["Home", "Service", "About", "Contact", "Blog'S"].map((item) => (
             <li key={item} className="mx-4 md:animate_link my-6 md:my-0 hover:text-primary transition-all ">
               <a href="#" className="text-xl">
@@ -55,6 +57,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          {/* </div> */}
 
           {/* <button className="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">
             Get started

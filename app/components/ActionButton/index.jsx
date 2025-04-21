@@ -8,7 +8,7 @@ function ActionButton() {
         <h1 className='font-semibold text-6xl max-w-[618px] text-center mx-auto text-[#263238] ' >
           Pellentesque suscipit fringilla libero eu.
         </h1>
-        <button className='btn mx-auto flex items-center justify-center gap-2 font-medium' >Get a Demo<BsArrowRight/></button>
+        <button className='btn animate_btn mx-auto flex items-center justify-center gap-2 font-medium' >Get a Demo<BsArrowRight/></button>
       </div>
     </div>
   )

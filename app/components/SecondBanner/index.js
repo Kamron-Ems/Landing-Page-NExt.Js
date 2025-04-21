@@ -82,7 +82,7 @@ function SecondBanner() {
                 </div>
               ))
             }
-            <button className='flex gap-2 items-center font-semibold text-lg text-primary' >Meet all customers <BsArrowRight/></button>
+            <button className=' animate_btn flex gap-2 items-center font-semibold text-lg text-primary' >Meet all customers <BsArrowRight/></button>
           </div>
       </div>
       </div>

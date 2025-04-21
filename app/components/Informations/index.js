@@ -29,7 +29,7 @@ function Informations({title,img,description}) {
             {description}
           </p>
         </div>
-          <button className='btn' >Learn More</button>
+          <button className='btn animate_btn' >Learn More</button>
       </div>
     </div>
   )
