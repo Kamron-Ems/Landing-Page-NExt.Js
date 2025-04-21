@@ -30,7 +30,7 @@ export default function Root() {
   return (
     <div className="">
       <NavBar/>
-      <Hero/>
+      {/* <Hero/>
       <OfferSection/>
       <Community/>
       <div className="space-y-9 ">
@@ -43,7 +43,7 @@ export default function Root() {
       <footer className="mt-56">
       <ActionButton/> 
       <Footer/>
-      </footer>
+      </footer> */}
     </div>
   );
 }

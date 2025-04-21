@@ -76,14 +76,16 @@ function Hero() {
             </div>
             {/* Left Image section */}
             <div 
-              // className='hidden md:block'
+              className='relative w-[350px] h-[350px] lg:w-[282.16px] lg:h-[293px]'
             >
               <Img 
-                src={item.img} alt={"f"} 
-                height={300}
-                width={300}
-                className=' w-[272.16px] h-[283px] lg:w-[282.16px] lg:h-[293px] object-contain '
-              />
+                src={item.img} alt={"Hero image"} 
+                // height={300}
+                // width={300}
+                fill
+                priority
+                className=' object-contain '
+                />
             </div>
           </div>
           ))

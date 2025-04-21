@@ -41,8 +41,8 @@ const DataIcons =[
 
 function SecondBanner() {
   return (
-    <div>
-      <div className=' container px-10 mx-auto bg-background flex flex-col md:flex-row items-center gap-10 md:gap-0 justify-between'>
+    <div className='bg-background'>
+      <div className=' container py-9 px-10 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-0 justify-between'>
       {/* Left Section */}
       <div className=' h-96 max-w-[500px] '>
         <Image 
@@ -68,13 +68,17 @@ function SecondBanner() {
           </div>
         </div>
         {/* List Icon */}
-          <div className='flex gap-10 items-center  ' >
+          <div className='flex flex-wrap gap-x-10 gap-y-5 items-center  ' >
             {
               DataIcons.map((item)=>(
                 <div
                   key={item.id}
+                  className=' relative h-10 w-10 '
                 >
-                  <Image src={item.icon} alt=''  />
+                  <Image src={item.icon} alt='' 
+                    fill 
+                    className='object-contain'                   
+                  />
                 </div>
               ))
             }

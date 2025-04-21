@@ -4,7 +4,7 @@ import { BsArrowRight } from 'react-icons/bs'
 function ActionButton() {
   return (
     <div className='bg-background '>
-      <div className='container mx-auto space-y-7 p-7 '>
+      <div className='container mx-auto space-y-7 p-10  '>
         <h1 className='font-semibold text-6xl max-w-[618px] text-center mx-auto text-[#263238] ' >
           Pellentesque suscipit fringilla libero eu.
         </h1>

@@ -27,15 +27,15 @@ const DataCard = [
 
 function CaringSection() {
   return (
-    <div className='container mx-auto space-y-5' >
+    <div className='container mx-auto space-y-9' >
         {/* Title section */}
       <div className=' space-y-3'>
         {/* title */}
         <h1 className='h1 text-center ' >Caring is the new marketing</h1>
-        <p className='text-text_lambda w-[550px] text-center mx-auto' >The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more. </p>
+        <p className='text-text_lambda max-w-[550px] text-center mx-auto' >The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more. </p>
       </div>
       {/* card section */}
-      <div className='grid gap-36 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 place-items-center justify-items-center items-center  px-32 '>
+      <div className='grid gap-y-36 lg:grid-cols-3 grid-cols-1 md:grid-cols-2 place-items-center justify-items-center items-center gap-x-60  px-32 '>
         {
             DataCard.map((item)=>(
                 <div

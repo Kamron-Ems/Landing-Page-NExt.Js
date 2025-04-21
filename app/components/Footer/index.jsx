@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className='bg-[#263238] py-12'>
       <div className='container mx-auto'>
-        <div className='py-5 flex flex-wrap sm:flex-row bg-rejd-400 gap-10 lg:gap-56 justify-center ' >
+        <div className='py-5 flex flex-wrap sm:flex-row bg-rejd-400 gap-10 lg:gap-10 justify-between mx-5 md:ml-0 lg:px-28 ' >
 
         {/* About Entreprise  */}
         <div className='flex flex-col gap-8 pb-2 h-full ' >
@@ -48,7 +48,7 @@ function Footer() {
             </div>
         </div>
         {/* Content page links */}
-        <div className=' grid md:grid-col-2 lg:grid-flow-col gap-5 lg:gap-24 flex-wrap'>
+        <div className=' grid grid-cols-2 gap-24 '>
           {/* Company */}
           <div className=' space-y-5 '>
             <h2 className='text-white font-semibold text-lg ' >Company</h2>
@@ -71,6 +71,7 @@ function Footer() {
               <li>Status</li>
             </ul>
           </div >
+        </div>
           {/* Stay up to date */}
           <div className=' space-y-5 '>
             <h2 className='text-white font-semibold text-lg ' >Stay up to date</h2>
@@ -80,7 +81,6 @@ function Footer() {
                 />
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

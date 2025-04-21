@@ -55,17 +55,18 @@ function OfferSection() {
       </div>
       {/* Icon section */}
       <div 
-        className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 items-center pyh-8 justify-between '
+        className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-y-6 place-items-center items-center pyh-8 justify-between '
       >
         {DataIcon.map((item)=>(
           <div 
             key={item.id}
-            className=' flex justify-center'
+            className=' flex justify-center relative h-10 w-10 '
           >
           <Image src={item.icon} alt='' 
-            width={30} 
-            height={30} 
-            className='h-10 w-10 hw-14 fw-14 object-contain mb-5 '
+            // width={30} 
+            // height={30} 
+            fill
+            className='object-contain mb-5 '
           />
           </div>
         ))}

@@ -7,10 +7,12 @@ function Informations({title,img,description}) {
   return (
     <div className=' container px-20 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-0 justify-between'>
       {/* Left Section */}
-      <div className=' h-96 max-w-[500px] '>
+      <div className=' relative h-96 w-[100%] '>
         <Image 
-          src={img} alt="" height={301} width={307} 
-          className='object-contain w-full h-full '
+          src={img} alt="" 
+          // height={301} width={307} 
+          fill
+          className='object-contain ws-full sh-full '
         />  
       </div>
       {/* Right Section */}

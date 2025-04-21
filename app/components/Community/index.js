@@ -49,7 +49,7 @@ function Community() {
         {DataIcon.map((item)=>(
             <div 
               key={item.id}
-              className=' relative md:h-56   md:max-w-72 flex shadow flex-col gap-2 justify-center px-6 py-4  '
+              className=' relative md:h-56   md:max-w-72 flex shadow hover:shadow-lg flex-col gap-2 justify-center px-6 py-4  '
             >
               <div className='space-y-3' >
                 {/* Icon */}
