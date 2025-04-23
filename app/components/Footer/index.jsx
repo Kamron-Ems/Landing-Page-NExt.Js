@@ -1,4 +1,7 @@
+"use client"
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { SlideUp } from '../../utility/animation'
 // Icon
 import { BsInstagram } from 'react-icons/bs'
 import { CgInstagram } from 'react-icons/cg'
@@ -16,7 +19,12 @@ function Footer() {
         <div className='py-5 flex flex-wrap sm:flex-row bg-rejd-400 gap-10 lg:gap-10 justify-between mx-5 md:ml-0 lg:px-28 ' >
 
         {/* About Entreprise  */}
-        <div className='flex flex-col gap-8 pb-2 h-full ' >
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{type:"spring", stiffness: 100, delay: 0.2 }}
+          className='flex flex-col gap-8 pb-2 h-full ' 
+        >
             {/* Logo */}
             <div className='flex' > 
               {/* <Image 
@@ -46,9 +54,15 @@ function Footer() {
                 <BsYoutube className=" w-5 h-5 "/>
               </div>
             </div>
-        </div>
+        </motion.div>
         {/* Content page links */}
-        <div className=' grid grid-cols-2 gap-24 '>
+        <motion.div 
+          variants={SlideUp(0.6)}
+          initial = "hidden"
+          whileInView={"visible"}
+          viewport={{ once: true }}
+          className=' grid grid-cols-2 gap-24 '
+        >
           {/* Company */}
           <div className=' space-y-5 '>
             <h2 className='text-white font-semibold text-lg ' >Company</h2>
@@ -71,16 +85,22 @@ function Footer() {
               <li>Status</li>
             </ul>
           </div >
-        </div>
+        </motion.div>
           {/* Stay up to date */}
-          <div className=' space-y-5 '>
+          <motion.div 
+            variants={SlideUp(0.9)}
+            initial = "hidden"
+            whileInView={"visible"}
+            viewport={{ once: true }}
+            className=' space-y-5 '
+          >
             <h2 className='text-white font-semibold text-lg ' >Stay up to date</h2>
             <div className='flex flex-row' >
               <input type="text" placeholder='Your Email address' 
                 className='text-neutral-200 text-base rounded-lg bg-zinc-600 focus:border-none '
                 />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

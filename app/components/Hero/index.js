@@ -2,6 +2,8 @@
 import React from 'react'
 import Img from 'next/image'
 import illustration from "@/public/Hero/Illustration.png"
+import {motion} from "framer-motion"
+import { SlideRight, SlideUp } from '../../utility/animation'
 // import Slider from "react-slick";
 // Import du modul slide
 import Slider from "react-slick";
@@ -62,20 +64,41 @@ function Hero() {
               {/* Presentation Block */}
               <div className='space-y-5' >
                 {/* title section */}
-                <h1 
+                <motion.h1
+                  variants={SlideRight(0.6)}
+                  initial="hidden"
+                  animate="visible" 
                   className='font-semibold text-4xl md:text-5xl lg:text-6xl text-text_title leading-none '
                 >
                   {item.title}
                   <span className='text-primary'>  from 8 years</span>
-                </h1>
+                </motion.h1>
                 {/* a litle description */}
-                <p className='text-xs lg:text-lg text-gray-500' >{item.description}</p>
+                <motion.p 
+                  variants={SlideRight(1.2)}
+                  initial="hidden"
+                  animate="visible"
+                  className='text-xs lg:text-lg text-gray-500' 
+                >
+                  {item.description}
+                </motion.p>
               </div>
                 {/* button Action */}
-                <button className='btn animate_btn' >Register</button>
+                <motion.div
+                  variants={SlideRight(1.4)}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <button 
+                    className='btn animate_btn' 
+                    >Register</button>
+                  </motion.div>
             </div>
             {/* Left Image section */}
-            <div 
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{type:"spring", stiffness: 100, delay: 0.2 }}
               className='relative w-[350px] h-[350px] lg:w-[282.16px] lg:h-[293px]'
             >
               <Img 
@@ -86,7 +109,7 @@ function Hero() {
                 priority
                 className=' object-contain '
                 />
-            </div>
+            </motion.div>
           </div>
           ))
           }

@@ -5,6 +5,7 @@ import logo from '@/public/Logo/Logo1.png'
 import { BsArrowRight, BsMenuButtonFill } from 'react-icons/bs'
 import { BiMenu } from 'react-icons/bi'
 import { GrClose } from 'react-icons/gr'
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 useEffect(() => {
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    
+
     if (currentScrollY > 800 && currentScrollY > lastScrollY) {
        // J'affiche la barre de navigation'
       setShowNavbar(true);
@@ -42,7 +43,13 @@ useEffect(() => {
 }, [lastScrollY]);
 
   return (
-        <div className={` fixed top-0 left-0 backdrop-blur-lg w-full z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'} shadow`}>
+    <>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
+      className={` fixed top-0 left-0 backdrop-blur-lg w-full z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'} shadow`}
+    >
     <nav className="py-3 px-2 bg-whites container mx-auto   md:flex md:items-center md:justify-between">
         <div className="flex justify-between items-center">
         <div className='relative w-[140px] h-[50px]'> 
@@ -86,7 +93,8 @@ useEffect(() => {
             <BsArrowRight/></button>
         </ul>
       </nav>
-    </div>
+    </motion.div>
+    </>
   );
 };
 

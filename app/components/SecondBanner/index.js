@@ -1,6 +1,9 @@
+"use client"
 import React from 'react'
 // biblioteque interne
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { SlideUp } from '../../utility/animation'
 // external files
 import image from "@/public/SecondBanner/image 9.png"
 import Logo from "@/public/SecondBanner/Vector7.png"
@@ -9,33 +12,40 @@ import Logo3 from "@/public/OfferSection/Logo3.png"
 import Logo4 from "@/public/OfferSection/Logo4.png"
 import Logo5 from "@/public/OfferSection/Logo5.png"
 import Logo6 from "@/public/OfferSection/Logo6.png"
+
 // Icon
 import { BsArrowRight, BsMenuButtonFill } from 'react-icons/bs'
 
 const DataIcons =[
   {
     id: 1,
-    icon: Logo
+    icon: Logo,
+    delay:0.1,
   },
   {
     id: 2,
     icon: Logo2,
+    delay:0.3,
   },
   {
     id: 3,
     icon: Logo3,
+    delay:0.5,
   },
   {
     id: 4,
     icon: Logo4,
+    delay:0.7,
   },
   {
     id: 5,
     icon: Logo5,
+    delay:0.9,
   },
   {
     id: 6,
     icon: Logo6,
+    delay:1.1,
   },
 ]
 
@@ -44,7 +54,7 @@ function SecondBanner() {
     <div className='bg-background '>
       <div className=' container py-9 px-5 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-x-5 justify-center'>
       {/* Left Section */}
-      <div className=' h-96 bg-clip-border shrink-0 max-w-[500px] '>
+      <div className=' hover:scale-110 transition-all h-96 bg-clip-border shrink-0 max-w-[500px] '>
         <Image 
           src={image} alt="" height={301} width={307} 
           className='object-contain w-full h-full '
@@ -71,7 +81,11 @@ function SecondBanner() {
           <div className='flex flex-wrap gap-x-10 gap-y-5 items-center antialiased ' >
             {
               DataIcons.map((item)=>(
-                <div
+                <motion.div
+                  variants={SlideUp(item.delay)}
+                  initial = "hidden"
+                  whileInView={"visible"}
+                  viewport={{ once: true }}
                   key={item.id}
                   className=' relative h-10 w-10 '
                 >
@@ -79,7 +93,7 @@ function SecondBanner() {
                     fill 
                     className='object-contain'                   
                   />
-                </div>
+                </motion.div>
               ))
             }
             <button className=' animate_btn flex gap-2 items-center font-semibold text-lg text-primary' >Meet all customers <BsArrowRight/></button>
