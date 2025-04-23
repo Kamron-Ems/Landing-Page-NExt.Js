@@ -32,10 +32,10 @@ function CaringSection() {
       <div className=' space-y-3'>
         {/* title */}
         <h1 className='h1 text-center ' >Caring is the new marketing</h1>
-        <p className='text-text_lambda max-w-[550px] text-center mx-auto' >The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more. </p>
+        <p className='text-gray-600 max-w-[550px] text-center mx-auto antialiased' >The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more. </p>
       </div>
       {/* card section */}
-      <div className='grid gap-y-36 lg:grid-cols-3 grid-cols-1 md:grid-cols-2 place-items-center justify-items-center items-center gap-x-60  px-32 '>
+      <div className='grid gap-y-36 lg:grid-cols-3 grid-cols-1 md:grid-cols-2 place-items-center justify-items-center items-center gap-x-60  px-32 antialiased '>
         {
             DataCard.map((item)=>(
                 <div
@@ -47,7 +47,7 @@ function CaringSection() {
                         <Image src={item.img} alt="" className='w-full h-full' />
                     </div>
                     {/* Description Card */}
-                    <div id="box" className='absolute top-[80%] left-1/2 transform -translate-x-1/2 z-50 p-4  shadow-lg text-center bg-background flex flex-col items-center w-64  gap-3 rounded-lg '>
+                    <div id="box" className='absolute top-[80%] left-1/2 transform -translate-x-1/2 z-10 p-4  shadow-lg text-center bg-background flex flex-col items-center w-64  gap-3 rounded-lg '>
                         <p className='text-text_lambda font-semibold text-lg '>{item.description}</p>
                         <button className='flex gap-2 items-center font-semibold text-lg text-primary animate_btn' >Readmore <BsArrowRight/></button> 
                     </div>

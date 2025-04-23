@@ -34,7 +34,7 @@ function Community() {
       <div className='max-w-[430px] mx-auto space-y-3'>
         {/* title */}
         <h1
-        className=' h1  text-center'
+        className=' h1  text-center antialiased'
         >Manage your entire community  in a single system</h1>
         {/* Description */}
         <p
@@ -70,7 +70,7 @@ function Community() {
               </div>
               {/* description item */}
               <p
-                className='text-center text-text_lambda text-sm w-full'
+                className='text-center text-gray-700 text-sm w-full antialiased'
               >
                 {item.description}
               </p>

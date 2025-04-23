@@ -12,6 +12,7 @@ import CaringSection from "./components/CaringSection"
 import ActionButton from "./components/ActionButton"
 import Footer from "./components/Footer"
 import NavBars from "./components/Navbars"
+import Card from "./components/Card/Card"
 // Files
 import info1 from "@/public/Informations/info1.png"
 import info2 from "@/public/Informations/info2.png"
@@ -35,10 +36,12 @@ export default function Root() {
       <Hero/>
       <OfferSection/>
       <Community/>
-      <div className="space-y-9 ">
-        <Informations title={DataInf1.title} img={DataInf1.img} description={DataInf1.description} />
+      <div className="space-y-9 font-sans ">
+        <Card img={DataInf1.img} title={DataInf1.title} description={DataInf1.description} />
+        {/* <Informations title={DataInf1.title} img={DataInf1.img} description={DataInf1.description} /> */}
         <Banner/>
-        <Informations title={DataInf2.title} img={DataInf2.img} description={DataInf2.description} />
+        <Card img={DataInf2.img} title={DataInf2.title} description={DataInf2.description} />
+        {/* <Informations title={DataInf2.title} img={DataInf2.img} description={DataInf2.description} /> */}
         <SecondBanner/>
         <CaringSection/>
       </div>

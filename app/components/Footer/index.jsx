@@ -11,7 +11,7 @@ import { BsYoutube } from 'react-icons/bs'
 
 function Footer() {
   return (
-    <div className='bg-[#263238] py-12'>
+    <div className='bg-[#263238] py-12 antialiased'>
       <div className='container mx-auto'>
         <div className='py-5 flex flex-wrap sm:flex-row bg-rejd-400 gap-10 lg:gap-10 justify-between mx-5 md:ml-0 lg:px-28 ' >
 

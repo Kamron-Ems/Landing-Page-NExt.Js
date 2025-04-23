@@ -49,7 +49,7 @@ function Hero() {
 
   return (
     <>
-      <div className='bg-[#F5F7FA]  min-w-96' >
+      <div className='bg-[#F5F7FA] py-24  min-w-96' >
         {/* <Slider {...settings}> */}
         <div className=''>
           {DataHero.map((item)=>(
@@ -58,9 +58,9 @@ function Hero() {
               className='py-24 flex flex-col-reverse md:flex-row h-full w-full px-[100px] gap-20 items-center justify-center'
             >
             {/* Right Text section */}
-            <div className='space-y-[22px] w-[320px] sm:w-[340px] md:w-[457px] lg:w-[600px] ' >
+            <div className='space-y-9 w-[320px] sm:w-[340px] md:w-[457px] lg:w-[600px] ' >
               {/* Presentation Block */}
-              <div className='space-y-3' >
+              <div className='space-y-5' >
                 {/* title section */}
                 <h1 
                   className='font-semibold text-4xl md:text-5xl lg:text-6xl text-text_title leading-none '
@@ -69,7 +69,7 @@ function Hero() {
                   <span className='text-primary'>  from 8 years</span>
                 </h1>
                 {/* a litle description */}
-                <p className='text-xs lg:text-base text-text_title/90 ' >{item.description}</p>
+                <p className='text-xs lg:text-lg text-gray-500' >{item.description}</p>
               </div>
                 {/* button Action */}
                 <button className='btn animate_btn' >Register</button>

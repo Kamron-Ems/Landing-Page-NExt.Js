@@ -49,7 +49,7 @@ function Banner() {
             <span>Helping a local</span><br/>
             <span className='text-primary' >business reinvent itself</span>
         </h1>
-        <p>
+        <p className='text-gray-700'>
             We reached here with our hard work and dedication
         </p>
       </div>
@@ -68,7 +68,7 @@ function Banner() {
                 {/* number */}
                 <span className='font-bold text-xl text-text_title ' >{item.numebres}</span>
                 {/* title */}
-                <span className='text-text_lambda text-sm' >{item.text}</span>
+                <span className='text-gray-500 text-sm' >{item.text}</span>
               </div>
               </div>
           ))

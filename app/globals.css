@@ -6,13 +6,16 @@
 
 @layer base {
  .btn {
-    @apply bg-primary rounded px-5 py-2 text-white;
+    @apply bg-primary rounded px-5 py-2 antialiased text-white text-lg;
  }
  .btn2 {
-    @apply flex gap-2 items-center font-semibold text-lg text-primary
+    @apply flex gap-2 antialiased items-center font-semibold text-lg text-primary transition-all hover:bg-green-500/10 active:bg-green-500/30
+ }
+ .btn3 {
+  @apply flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs  font-bold uppercase text-primary  btn2 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none
  }
  .h1 {
-   @apply font-semibold text-text_title text-3xl;
+   @apply font-semibold font-sans leading-snug  text-text_title text-3xl antialiased;
  }
  .animate_btn {
    @apply ease-in duration-200  transition-all hover:scale-95 font-[Poppins]
@@ -20,6 +23,7 @@
  .animate_link{
    @apply   hover:text-primary hover:scale-110 transition-shadow
  }
+
 }
 
 
