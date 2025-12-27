@@ -1,18 +1,13 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import {motion} from "framer-motion"
-import { SlideLeft , SlideUp } from '../../utility/animation'
+import { SlideLeft } from '../../utility/animation'
 // Icons
 import { MdPayments } from "react-icons/md";
 import { BsCalendarEventFill } from "react-icons/bs";
-import { BsCalendar4Event } from "react-icons/bs";
-import { LuHandshake } from "react-icons/lu";
 import { TbUsers } from "react-icons/tb";
-import { GiMeepleGroup } from "react-icons/gi";
 import { LiaHandshake } from "react-icons/lia";
 
-{/* <UsersRound /> */}
  const DataBanner= [
     {
         id:1,
@@ -35,14 +30,12 @@ import { LiaHandshake } from "react-icons/lia";
         text: "Event Bookings",
         delay:0.9,
     },
-    // <BsCalendarEventFill />
     {
         id:4,
         icon: <MdPayments/>,
         numebres: 1926436,
         text: "Payments",
         delay:1.2,
-        // <CreditCard />
     },
  ]
 
@@ -90,7 +83,6 @@ function Banner() {
           ))
         }
       </div>
-      {/* <TbUsers/><LiaHandshake/><GiMeepleGroup/> */}
     </div>
     </div>
   )

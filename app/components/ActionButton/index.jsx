@@ -6,7 +6,7 @@ import { SlideUp } from '../../utility/animation'
 
 function ActionButton() {
   return (
-    <div className='bg-background '>
+    <div className='bg-background w-full overflsow-x-hidden mt-48'>
       <div className='container mx-auto space-y-7 p-10  '>
         <motion.h1 
           variants={SlideUp(0.3)}

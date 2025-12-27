@@ -1,9 +1,8 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
-import Icon from '@/public/Community/Vector.png'
-import Icon1 from '@/public/Community/Vector1.png'
-import Icon2 from '@/public/Community/Vector3.png'
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { FaRegHandshake } from "react-icons/fa";
 import {motion} from "framer-motion"
 import { SlideLeft , SlideUp } from '../../utility/animation'
 
@@ -11,21 +10,21 @@ import { SlideLeft , SlideUp } from '../../utility/animation'
 const DataIcon = [
   {
     id:1,
-    icon: Icon,
+    icon: HiOutlineUserGroup,
     title: "Membership Organisations",
     description: "Our membership management software provides full automation of membership renewals and payments",
     delay: 0.3,
   },
   {
     id:2,
-    icon: Icon1,
+    icon: FaPeopleGroup,
     title: "National Associations",
     description: "Our membership management software provides full automation of membership renewals and payments",
     delay: 0.6,
   },
   {
     id:3,
-    icon: Icon2,
+    icon: FaRegHandshake,
     title: "Clubs And Groups",
     description: "Our membership management software provides full automation of membership renewals and payments",
     delay: 0.9,
@@ -65,17 +64,12 @@ function Community() {
             >
               <div className='space-y-3' >
                 {/* Icon */}
-                <div className='relative' >
-                  <Image src={item.icon} alt='' 
-                    width={30} 
-                    height={30}  
-                    className='h-10 w-10  object-contain mb-5 mx-auto'
-                    />
-                </div>
+      
+                <item.icon className=' text-3xl text-center text-black font-semibold w-full ' />
               
               {/* title item */}
               <h2 
-                className='text-center font-bold  text-xl'>
+                className='text-center font-bold text-gray-800 text-xl'>
                 {item.title}
               </h2>
               </div>

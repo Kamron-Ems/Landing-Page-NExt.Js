@@ -5,7 +5,6 @@ import NavBar from "./components/Navbar"
 import Hero from "./components/Hero"
 import OfferSection from "./components/OfferSection"
 import Community from "./components/Community"
-import Informations from "./components/Informations"
 import Banner from "./components/Banner"
 import SecondBanner from "./components/SecondBanner"
 import CaringSection from "./components/CaringSection"
@@ -30,25 +29,24 @@ const DataInf2 = {
 
 export default function Root() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden min-w-[440px]">
       {/* <NavBar/> */}
       <NavBars/>
       <Hero/>
       <OfferSection/>
       <Community/>
       <div className="space-y-9 font-sans ">
-        <Card img={DataInf1.img} title={DataInf1.title} description={DataInf1.description} />
-        {/* <Informations title={DataInf1.title} img={DataInf1.img} description={DataInf1.description} /> */}
+        <Card {...DataInf1} />
         <Banner/>
-        <Card img={DataInf2.img} title={DataInf2.title} description={DataInf2.description} />
-        {/* <Informations title={DataInf2.title} img={DataInf2.img} description={DataInf2.description} /> */}
+        <Card {...DataInf2}/>
         <SecondBanner/>
         <CaringSection/>
       </div>
-      <footer className="mt-56">
+      <footer>
       <ActionButton/> 
       <Footer/>
       </footer>
     </div>
   );
 }
+

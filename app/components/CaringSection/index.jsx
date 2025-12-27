@@ -55,7 +55,7 @@ function CaringSection() {
                     whileInView={"visible"}
                     viewport={{ once: true }}
                     key={item.id}
-                    className='w-80 h-52 relative group'
+                    className='w-80 h-52 mt-5 relative group'
                 >
                     {/* Image Card */}
                     <div id="img" className=' group-hover:scale-105 transition-all rounded-lg'>

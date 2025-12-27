@@ -57,6 +57,7 @@ useEffect(() => {
           src={logo} alt="" 
           fill
           priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className='object-contain '
         /> 
         </div>
@@ -75,7 +76,7 @@ useEffect(() => {
           className={`md:flex md:items-center md:static absolute bg-whites  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 transition-all ease-in duration-500
             ${
               isOpen
-                ? "top-[80px] opacity-100 z-10"
+                ? "top-[80px] opacity-100 z-10 bg-white md:bg-background "
                 : "top-[-400px] opacity-0 z-[-1]"
             } md:top-auto md:opacity-100 md:z-auto`}
         >
@@ -86,7 +87,7 @@ useEffect(() => {
               </a>
             </li>
           ))}
-  
+  {/* register button */}
           <button 
             className=' flex items-center justify-center gap-2 bg-primary  rounded px-5 py-2 text-white animate_btn '
             > Register Now  

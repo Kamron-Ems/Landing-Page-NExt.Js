@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* style for slide with keen-slider */
+/* @import 'keen-slider/keen-slider.min.css'; */
 
 
 @layer base {
@@ -23,6 +25,7 @@
  .animate_link{
    @apply   hover:text-primary hover:scale-110 transition-shadow
  }
+
 
 }
 

@@ -8,8 +8,6 @@ import Logo4 from '@/public/OfferSection/Logo4.png'
 import Logo5 from '@/public/OfferSection/Logo5.png'
 import Logo6 from '@/public/OfferSection/Logo6.png'
 // extern
-// import {motion} from 'framer-motion'
-// import { SlideUp } from '../../utility/animation'
 import {motion} from "framer-motion"
 import { SlideUp } from '../../utility/animation'
 
@@ -89,6 +87,8 @@ function OfferSection() {
             // width={30} 
             // height={30} 
             fill
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className='object-contain mb-5 '
           />
           </motion.div>

@@ -17,6 +17,8 @@ export default function Card({img,title, description}) {
     <Image 
       src={img} alt="" 
       fill
+      priority
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       className='object-contain'
     />
     </motion.div>
@@ -43,12 +45,6 @@ export default function Card({img,title, description}) {
       >
         {description}
       </motion.p>
-      {/* <motion.div
-        variants={SlideUp(0.9)}
-        initial = "hidden"
-        whileInView={"visible"}
-        viewport={{ once: true }}
-      > */}
         <button
           className="btn animate_btn "
           type="button"
