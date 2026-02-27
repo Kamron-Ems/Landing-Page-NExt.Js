@@ -64,7 +64,7 @@ function Hero() {
 
   return (
     <>
-      <div className='bg-[#F5F7FA] py-20  lw-screen min-w-96 w-full overflow-hidden' >
+      <div className='bg-[#F5F7FA] py-32  lw-screen min-w-96 w-full overflow-hidden' >
          {/* Initialisation de Swiper avec les options */}
         <Swiper 
           spaceBetween={30} // Espacement entre les slides
