@@ -29,13 +29,13 @@ const DataInf2 = {
 
 export default function Root() {
   return (
-    <div className="overflow-x-hidden min-w-[440px]">
+    <div className="overflow-x-hidden min-w-[440px] flex flex-col gap-20">
       {/* <NavBar/> */}
       <NavBars/>
       <Hero/>
       <OfferSection/>
       <Community/>
-      <div className="space-y-9 font-sans ">
+      <div className="space-y-20 font-sans ">
         <Card {...DataInf1} />
         <Banner/>
         <Card {...DataInf2}/>
