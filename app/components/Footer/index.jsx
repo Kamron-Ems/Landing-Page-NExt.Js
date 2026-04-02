@@ -51,7 +51,7 @@ function Footer() {
             </div>
             {/* About */}
             <div className='text-neutral-200 '>
-              <h3>Copyright © 2020 Landify UI Kit.</h3>
+              <h3>Copyright © 2026 Landify UI Kit.</h3>
               <h3>All rights reserved</h3>
             </div>
             {/* Icon */}

@@ -13,7 +13,7 @@ function ActionButton() {
           initial = "hidden"
           whileInView={"visible"}
           viewport={{ once: true }}
-          className='font-semibold text-6xl max-w-[618px] text-center mx-auto text-[#263238] ' 
+          className='font-semibold lg:text-6xl md:text-5xl text-4xl  max-w-[618px] text-center mx-auto text-[#263238] ' 
         >
           Pellentesque suscipit fringilla libero eu.
         </motion.h1>
