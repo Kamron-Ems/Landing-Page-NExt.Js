@@ -1,5 +1,5 @@
 // Pages
-import Home from "./Pages/Home/page"
+
 // Components
 import NavBar from "./components/Navbar"
 import Hero from "./components/Hero"
